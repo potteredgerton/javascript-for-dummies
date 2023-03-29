@@ -111,8 +111,7 @@ To call the function, we can use the variable name instead of the function name,
 <code>
 let result = square(4);
 console.log(result); // Output: 16
-In this example, we call the square function by using the square variable name and passing in the value 4 as the num parameter. The function then executes and returns the value 16, which we assign to the result variable. We then log the value of result to the console using console.log(), and the output is 16.
 </code>
 </pre>
 
-That's it! With these basic concepts, you can start using and creating functions in your JavaScript code. As you continue learning, you'll discover more advanced features and techniques for working with functions.
+In this example, we call the square function by using the square variable name and passing in the value 4 as the num parameter. The function then executes and returns the value 16, which we assign to the result variable. We then log the value of result to the console using console.log(), and the output is 16.
