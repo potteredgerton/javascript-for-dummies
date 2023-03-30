@@ -85,7 +85,7 @@ let isSunny = false;
 
 In this example, we define two variables called isRainy and isSunny that are both of the Boolean data type.
 
-###Array 
+### Array 
 This data type is used to represent a collection of values. Arrays are enclosed in square brackets and can contain any combination of data types. Here's an example:
 
 <pre>
@@ -97,7 +97,7 @@ let fruits = ["apple", "banana", "orange"];
 
 In this example, we define two variables called numbers and fruits that are both of the Array data type.
 
-###Object 
+### Object 
 This data type is used to represent a collection of key-value pairs. Objects are enclosed in curly braces and can contain any combination of data types. Here's an example:
 
 <pre>
@@ -129,7 +129,8 @@ In this example, we use console.log() to print the value of the name, isSunny, f
 
 Operators are symbols that perform operations on one or more values (operands) to produce a new value. JavaScript has several types of operators, including arithmetic, comparison, logical, and assignment operators.
 
-Arithmetic operators: These operators perform mathematical calculations on numeric values. Here are some common arithmetic operators:
+### Arithmetic operators
+These operators perform mathematical calculations on numeric values. Here are some common arithmetic operators:
 + Addition: Adds two values together.
 - Subtraction: Subtracts one value from another.
 * Multiplication: Multiplies two values together.
@@ -150,7 +151,8 @@ let remainder = x % y; // 1
 </code>
 </pre>
 
-Comparison operators: These operators compare two values and return a Boolean value (true or false). Here are some common comparison operators:
+### Comparison operators
+These operators compare two values and return a Boolean value (true or false). Here are some common comparison operators:
 == Equal to: Returns true if two values are equal.
 != Not equal to: Returns true if two values are not equal.
 > Greater than: Returns true if the first value is greater than the second value.
@@ -172,7 +174,8 @@ console.log(age <= 27); // true
 </code>
 </pre>
 
-Logical operators: These operators are used to combine or invert Boolean values. Here are some common logical operators:
+### Logical operators
+These operators are used to combine or invert Boolean values. Here are some common logical operators:
 && Logical AND: Returns true if both values are true.
 || Logical OR: Returns true if at least one value is true.
 ! Logical NOT: Inverts the Boolean value.
@@ -189,7 +192,8 @@ console.log(!isSunny); // false
 </code>
 </pre>
 
-Assignment operators: These operators are used to assign values to variables. Here are some common assignment operators:
+### Assignment operators
+These operators are used to assign values to variables. Here are some common assignment operators:
 = Simple assignment: Assigns a value to a variable.
 += Addition assignment: Adds a value to a variable and assigns the result to the variable.
 -= Subtraction assignment: Subtracts a value from a variable and assigns the result to the variable.
@@ -220,7 +224,8 @@ console.log(x); // 0
 </code>
 </pre>
 
-String operators: In addition to the arithmetic operators, JavaScript also has string operators:
+### String operators
+In addition to the arithmetic operators, JavaScript also has string operators:
 + Concatenation: Joins two or more strings together.
 Here's an example of using string operators:
 
