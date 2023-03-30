@@ -49,7 +49,8 @@ In the example above, we declare two variables, num1 and num2, with the values 5
 
 JavaScript has several built-in data types that are used to represent different kinds of values. Here are the most common data types:
 
-Number: This data type is used to represent numeric values. Numbers can be positive, negative, or decimal. Here's an example:
+### Number
+This data type is used to represent numeric values. Numbers can be positive, negative, or decimal. Here's an example:
 
 <pre>
 <code>
@@ -60,7 +61,8 @@ let temperature = -10.5;
 
 In this example, we define two variables called age and temperature that are both of the Number data type.
 
-String: This data type is used to represent text values. Strings are enclosed in single or double quotes. Here's an example:
+### String
+This data type is used to represent text values. Strings are enclosed in single or double quotes. Here's an example:
 
 <pre>
 <code>
@@ -71,7 +73,8 @@ let message = 'Hello, world!';
 
 In this example, we define two variables called name and message that are both of the String data type.
 
-Boolean: This data type is used to represent true/false values. Here's an example:
+### Boolean
+This data type is used to represent true/false values. Here's an example:
 
 <pre>
 <code>
@@ -82,7 +85,8 @@ let isSunny = false;
 
 In this example, we define two variables called isRainy and isSunny that are both of the Boolean data type.
 
-Array: This data type is used to represent a collection of values. Arrays are enclosed in square brackets and can contain any combination of data types. Here's an example:
+###Array 
+This data type is used to represent a collection of values. Arrays are enclosed in square brackets and can contain any combination of data types. Here's an example:
 
 <pre>
 <code>
@@ -93,7 +97,8 @@ let fruits = ["apple", "banana", "orange"];
 
 In this example, we define two variables called numbers and fruits that are both of the Array data type.
 
-Object: This data type is used to represent a collection of key-value pairs. Objects are enclosed in curly braces and can contain any combination of data types. Here's an example:
+###Object 
+This data type is used to represent a collection of key-value pairs. Objects are enclosed in curly braces and can contain any combination of data types. Here's an example:
 
 <pre>
 <code>
@@ -120,9 +125,130 @@ console.log(person.age); // Output: 27
 
 In this example, we use console.log() to print the value of the name, isSunny, fruits[0], and person.age variables to the console.
 
-That's it! With these basic concepts, you can start using data types in your JavaScript code. As you continue learning, you'll discover more advanced features and techniques for working with data types.
-
 ## Chapter 3: Operators
+
+Operators are symbols that perform operations on one or more values (operands) to produce a new value. JavaScript has several types of operators, including arithmetic, comparison, logical, and assignment operators.
+
+Arithmetic operators: These operators perform mathematical calculations on numeric values. Here are some common arithmetic operators:
++ Addition: Adds two values together.
+- Subtraction: Subtracts one value from another.
+* Multiplication: Multiplies two values together.
+/ Division: Divides one value by another.
+% Modulus: Returns the remainder of a division operation.
+Here's an example of using arithmetic operators:
+
+<pre>
+<code>
+let x = 5;
+let y = 2;
+
+let sum = x + y; // 7
+let difference = x - y; // 3
+let product = x * y; // 10
+let quotient = x / y; // 2.5
+let remainder = x % y; // 1
+</code>
+</pre>
+
+Comparison operators: These operators compare two values and return a Boolean value (true or false). Here are some common comparison operators:
+== Equal to: Returns true if two values are equal.
+!= Not equal to: Returns true if two values are not equal.
+> Greater than: Returns true if the first value is greater than the second value.
+< Less than: Returns true if the first value is less than the second value.
+>= Greater than or equal to: Returns true if the first value is greater than or equal to the second value.
+<= Less than or equal to: Returns true if the first value is less than or equal to the second value.
+Here's an example of using comparison operators:
+
+<pre>
+</code>
+let age = 27;
+
+console.log(age == 27); // true
+console.log(age != 27); // false
+console.log(age > 30); // false
+console.log(age < 30); // true
+console.log(age >= 27); // true
+console.log(age <= 27); // true
+</code>
+</pre>
+
+Logical operators: These operators are used to combine or invert Boolean values. Here are some common logical operators:
+&& Logical AND: Returns true if both values are true.
+|| Logical OR: Returns true if at least one value is true.
+! Logical NOT: Inverts the Boolean value.
+Here's an example of using logical operators:
+
+<pre>
+<code>
+let isSunny = true;
+let isWarm = true;
+
+console.log(isSunny && isWarm); // true
+console.log(isSunny || isWarm); // true
+console.log(!isSunny); // false
+</code>
+</pre>
+
+Assignment operators: These operators are used to assign values to variables. Here are some common assignment operators:
+= Simple assignment: Assigns a value to a variable.
++= Addition assignment: Adds a value to a variable and assigns the result to the variable.
+-= Subtraction assignment: Subtracts a value from a variable and assigns the result to the variable.
+*= Multiplication assignment: Multiplies a variable by a value and assigns the result to the variable.
+/= Division assignment: Divides a variable by a value and assigns the result to the variable.
+%= Modulus assignment: Calculates the remainder of a variable divided by a value and assigns the result to the variable.
+Here's an example of using assignment operators:
+
+<pre>
+<code>
+let x = 10;
+let y = 2;
+
+x += y; // equivalent to x = x + y;
+console.log(x); // 12
+
+x -= y; // equivalent to x = x - y;
+console.log(x); // 10
+
+x *= y; // equivalent to x = x * y;
+console.log(x); // 20
+
+x /= y; // equivalent to x = x / y;
+console.log(x); // 10
+
+x %= y; // equivalent to x = x % y;
+console.log(x); // 0
+</code>
+</pre>
+
+String operators: In addition to the arithmetic operators, JavaScript also has string operators:
++ Concatenation: Joins two or more strings together.
+Here's an example of using string operators:
+
+<pre>
+<code>
+let firstName = 'John';
+let lastName = 'Doe';
+
+let fullName = firstName + ' ' + lastName;
+console.log(fullName); // John Doe
+</code>
+</pre>
+
+Type operators: These operators are used to determine the data type of a value. Here are some common type operators:
+typeof Returns a string that represents the data type of the value.
+Here's an example of using type operators:
+
+<pre>
+<code>
+let age = 27;
+let name = 'John';
+let isMarried = false;
+
+console.log(typeof age); // number
+console.log(typeof name); // string
+console.log(typeof isMarried); // boolean
+</code>
+</pre>
 
 ## Chapter 4: Functions 
 
