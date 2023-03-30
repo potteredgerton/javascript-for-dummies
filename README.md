@@ -45,8 +45,86 @@ console.log(result); // Output: 15
 
 In the example above, we declare two variables, num1 and num2, with the values 5 and 10, respectively. We then declare a third variable, result, and assign it the value of num1 + num2, which is 15. We log the value of result to the console using console.log(), and the output is 15.
 
+## Chapter 2: Data types
 
-## Functions 
+JavaScript has several built-in data types that are used to represent different kinds of values. Here are the most common data types:
+
+Number: This data type is used to represent numeric values. Numbers can be positive, negative, or decimal. Here's an example:
+
+<pre>
+<code>
+let age = 27;
+let temperature = -10.5;
+</code>
+</pre>
+
+In this example, we define two variables called age and temperature that are both of the Number data type.
+
+String: This data type is used to represent text values. Strings are enclosed in single or double quotes. Here's an example:
+
+<pre>
+<code>
+let name = "John";
+let message = 'Hello, world!';
+</code>
+</pre>
+
+In this example, we define two variables called name and message that are both of the String data type.
+
+Boolean: This data type is used to represent true/false values. Here's an example:
+
+<pre>
+<code>
+let isRainy = true;
+let isSunny = false;
+</code>
+</pre>
+
+In this example, we define two variables called isRainy and isSunny that are both of the Boolean data type.
+
+Array: This data type is used to represent a collection of values. Arrays are enclosed in square brackets and can contain any combination of data types. Here's an example:
+
+<pre>
+<code>
+let numbers = [1, 2, 3, 4, 5];
+let fruits = ["apple", "banana", "orange"];
+</code>
+</pre>
+
+In this example, we define two variables called numbers and fruits that are both of the Array data type.
+
+Object: This data type is used to represent a collection of key-value pairs. Objects are enclosed in curly braces and can contain any combination of data types. Here's an example:
+
+<pre>
+<code>
+let person = {
+  name: "John",
+  age: 27,
+  isStudent: true
+};
+</code>
+</pre>
+
+In this example, we define a variable called person that is of the Object data type. The person object has three key-value pairs: name with a value of "John", age with a value of 27, and isStudent with a value of true.
+
+To access the value of a variable, we can simply use the variable name. For example:
+
+<pre>
+<code>
+console.log(name); // Output: "John"
+console.log(isSunny); // Output: false
+console.log(fruits[0]); // Output: "apple"
+console.log(person.age); // Output: 27
+</code>
+</pre>
+
+In this example, we use console.log() to print the value of the name, isSunny, fruits[0], and person.age variables to the console.
+
+That's it! With these basic concepts, you can start using data types in your JavaScript code. As you continue learning, you'll discover more advanced features and techniques for working with data types.
+
+## Chapter 3: Operators
+
+## Chapter 4: Functions 
 
 Functions in JavaScript are reusable blocks of code that perform a specific task. They can accept inputs (called parameters) and return outputs (called return values). Here's an example of a simple function:
 
