@@ -324,3 +324,224 @@ console.log(result); // Output: 16
 </pre>
 
 In this example, we call the square function by using the square variable name and passing in the value 4 as the num parameter. The function then executes and returns the value 16, which we assign to the result variable. We then log the value of result to the console using console.log(), and the output is 16.
+
+## Chapter 5: Control Flow
+Control flow is the order in which statements are executed in a program. In JavaScript, we can control the flow of our program's execution using various control structures. These structures allow us to make decisions based on conditions, repeat sections of code, and more.
+
+### Conditional Statements
+Conditional statements allow us to execute different blocks of code depending on whether a certain condition is true or false. The most common conditional statement in JavaScript is the if statement:
+
+<pre>
+<code>
+let x = 10;
+let y = 20;
+
+if (x < y) {
+  console.log("x is less than y");
+}
+</code>
+</pre>
+
+In this example, the code within the curly braces will only execute if the condition in parentheses is true.
+
+We can also add an else block to execute code if the condition is false:
+
+<pre>
+<code>
+let x = 10;
+let y = 20;
+
+if (x < y) {
+  console.log("x is less than y");
+} else {
+  console.log("x is greater than or equal to y");
+}
+</code>
+</pre>
+
+If the condition in parentheses is false, the code within the else block will execute.
+
+We can also chain multiple conditions using else if:
+
+<pre>
+<code>
+let x = 10;
+let y = 20;
+
+if (x < y) {
+  console.log("x is less than y");
+} else if (x === y) {
+  console.log("x is equal to y");
+} else {
+  console.log("x is greater than y");
+}
+</code>
+</pre>
+
+### Switch Statements
+A switch statement allows us to execute different blocks of code based on different values of a variable. Here's an example:
+
+<pre>
+<code>
+let color = "red";
+
+switch (color) {
+  case "red":
+    console.log("The color is red");
+    break;
+  case "blue":
+    console.log("The color is blue");
+    break;
+  case "green":
+    console.log("The color is green");
+    break;
+  default:
+    console.log("The color is not red, blue, or green");
+}
+</code>
+</pre>
+
+In this example, the code within the block associated with the case label that matches the value of color will execute. The default block will execute if none of the case labels match.
+
+Note that we need to include a break statement at the end of each case block, or else the code will "fall through" to the next case block.
+
+### Loops
+Loops allow us to execute the same block of code multiple times. There are several types of loops in JavaScript:
+
+while loop: executes the code block while a certain condition is true.
+
+<pre>
+<code>
+let i = 0;
+
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+</code>
+</pre>
+
+do-while loop: similar to the while loop, but guarantees that the code block will execute at least once.
+<pre>
+<code>
+let i = 0;
+
+do {
+  console.log(i);
+  i++;
+} while (i < 10);
+</code>
+</pre>
+
+for loop: executes the code block a specified number of times.
+<pre>
+<code>
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+</code>
+</pre>
+
+for...in loop: iterates over the properties of an object.
+<pre>
+<code>
+const person = { name: "John", age: 27 };
+
+for (let prop in person) {
+  console.log(prop + ": " + person[prop]);
+}
+</code>
+</pre>
+for...of loop: iterates over the values of an iterable object, such as an array
+
+<pre>
+<code>
+const numbers = [1, 2, 3, 4, 5];
+
+for (let number of numbers) {
+  console.log(number);
+}
+</code>
+</pre>
+
+### Break and Continue
+In loops, we can use the break statement to exit the loop early, and the continue statement to skip an iteration of the loop. Here's an example of using break to exit a loop:
+
+<pre>
+<code>
+const numbers = [1, 2, 3, 4, 5];
+
+for (let number of numbers) {
+  console.log(number);
+  
+  if (number === 3) {
+    break;
+  }
+}
+</code>
+</pre>
+
+In this example, the loop will exit early when it reaches the number 3.
+
+Here's an example of using continue to skip an iteration:
+
+<pre>
+<code>
+const numbers = [1, 2, 3, 4, 5];
+
+for (let number of numbers) {
+  if (number === 3) {
+    continue;
+  }
+  
+  console.log(number);
+}
+</code>
+</pre>
+In this example, the number 3 will be skipped and the loop will continue with the next iteration.
+
+### Ternary Operator
+The ternary operator is a shorthand way of writing an if statement that returns a value. Here's an example:
+
+<pre>
+<code>
+let x = 10;
+let y = 20;
+
+let result = x < y ? "x is less than y" : "x is greater than or equal to y";
+
+console.log(result);
+</code>
+</pre>
+
+In this example, the value of result will be "x is less than y" if the condition is true, and "x is greater than or equal to y" if the condition is false.
+
+### Falsy and Truthy Values
+In JavaScript, certain values are considered "falsy" or "truthy" in boolean contexts. Falsy values are those that are considered false when evaluated as a boolean, such as false, 0, "" (an empty string), null, undefined, and NaN. All other values are considered truthy.
+
+Here's an example of using a truthy value in an if statement:
+
+<pre>
+<code>
+let x = 10;
+
+if (x) {
+  console.log("x is truthy");
+}
+</code>
+</pre>
+
+In this example, the code within the if block will execute because x is truthy.
+
+And here's an example of using a falsy value in an if statement:
+
+<pre>
+<code>
+let x = null;
+
+if (!x) {
+  console.log("x is falsy");
+}
+</code>
+</pre>
+In this example, the code within the if block will execute because x is falsy.
