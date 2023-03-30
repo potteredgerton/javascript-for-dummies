@@ -155,9 +155,9 @@ let remainder = x % y; // 1
 These operators compare two values and return a Boolean value (true or false). Here are some common comparison operators:
 == Equal to: Returns true if two values are equal.
 != Not equal to: Returns true if two values are not equal.
-> Greater than: Returns true if the first value is greater than the second value.
+\> Greater than: Returns true if the first value is greater than the second value.
 < Less than: Returns true if the first value is less than the second value.
->= Greater than or equal to: Returns true if the first value is greater than or equal to the second value.
+\>= Greater than or equal to: Returns true if the first value is greater than or equal to the second value.
 <= Less than or equal to: Returns true if the first value is less than or equal to the second value.
 Here's an example of using comparison operators:
 
